@@ -6,6 +6,11 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Comedor Lima' });
 });
 
+/* GET upload. */
+router.get('/upload', function(req, res, next) {
+  res.render('upload', { title: 'Comedor Lima - Upload' });
+});
+
 router.post('/upload', function(req, res, next) {
   if (!req.files || Object.keys(req.files).length === 0) {
     return res.status(400).send('No files were uploaded.');
@@ -15,7 +20,7 @@ router.post('/upload', function(req, res, next) {
   let image = req.files.image;
 
   // Use the mv() method to place the file somewhere on your server
-  image.mv('./image.jpg', function(err) {
+  image.mv('./public/images/'+image.name, function(err) {
     if (err)
       return res.status(500).send(err);
 
