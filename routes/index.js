@@ -6,8 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Comedor Lima' });
 });
 
-router.post('/upload', function(req, res) {
-  console.log(req.files);
+router.post('/upload', function(req, res, next) {
+  console.log(req);
 });
 
 module.exports = router;
