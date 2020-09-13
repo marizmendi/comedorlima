@@ -1,11 +1,117 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>var __adobewebfontsappname__="dreamweaver"</script>
+  <script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Navigation -->
+    <header> <a href="">
+      <h4 class="logo">Comedor de Lima</h4>
+    </a>
+    <nav>
+      <ul>
+        <li>INICIO</li>
+        <li><a href="#about">QUIÉNES SOMOS</a></li>
+        <li><a href="#food">REPOSTERÍA</a></li>
+        <li> <a href="#contact">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h2 class="hero_header">HERO LIGHT</h2>
+    <p class="tagline">Light is a simple one page website</p>
+  </section>
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2 class="hidden">About</h2>
+    <p class="text_column">Poner una historua sobre como surge la idea de realizar esta cosa benefica par el comedor de lima. </p>
+    <p class="text_column">Contar un poco acerca del comedor de lima que se hace y desde cuando ayudamos, los ninos que no reciben comida y que les viene super bien. </p>
+    <p class="text_column">Dar las gracias a todos los que participan en estos proyectos ayudando y que estan los domingos pendiendtes de todas las tartas que llegan y poner los precios. </p>
+  </section>
+  <!-- Stats Gallery Section -->
+  <div class="gallery">
+    <div class="thumbnail">
+      <h1 class="stats">1500</h1>
+      <h4>TITLE</h4>
+      <p>One line description</p>
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats">2300</h1>
+      <h4>TITLE</h4>
+      <p>One line description</p>
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats">7500</h1>
+      <h4>TITLE</h4>
+      <p>One line description</p>
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats">9870</h1>
+      <h4>TITLE</h4>
+      <p>One line description</p>
+    </div>
+  </div>
+  <!-- Parallax Section -->
+  <section class="banner">
+    <h2 class="parallax">PARALLAX HERO</h2>
+    <p class="parallax_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+  </section>
+  <!-- More Info Section -->
+  <footer>
+    <article class="footer_column">
+      <h3>PARROQUIA</h3>
+      <img src="images/parroquia.jpg" alt="" width="200" height="200" class="cards"/>
+      <p>La Parroquia Los Santos Apóstoles es una comunidad de los Redentoristas en la que se realizan varias actividades de cara a la ayuda de los más necesitados. La función de la conocida "Las Tartas" es realizar una recaudación benefica tras la venta de respostería para el Comedor de Lima</p>
+    </article>
+    <article class="footer_column">
+      <h3>UBICACIÓN</h3>
+      <iframe width="400" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=400&amp;height=200&amp;hl=en&amp;q=Parroquia%20Santos%20Ap%C3%B3stoles%20Boadilla%20del%20Monte+(Parrquia%20Santos%20Ap%C3%B3stoles)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+
+      <p>La Parroquia se encuentra en las Urbanicación Las Lomas de Boadilla del Monte. La tranquilidad de la zona hace que los vecinos sean siempre bienvenidos.</p>
+    </article>
+  </footer>
+
+  <!-- Food Section -->
+  <section class="food" id="food">
+    <h2>Repostería</h2>
+    <p> Aqui tendriamos que ir poniendo todas las fotos de las tartas pero estoy un poco atascada</p>
+
+
+    <h3>Seleccionar una imagen:</h3>
+    <form action="./action_page.html">
+      <label for="myfile">Selecciona una imagen:</label>
+      <input type="file" id="myimage" name="myimage"><br><br>
+      <input type="submit">
+
+
+    </form>
+
+
+
+
+
+
+  </section>
+
+  <!-- Footer Section -->
+  <section class="footer_banner" id="contact">
+    <h2 class="hidden">Footer Banner Section </h2>
+    <p class="hero_header">Cada último domingo de cada mes</p>S
+
+  </section>
+  <!-- Copyrights Section -->
+  <div class="copyright">&copy;2020 - <strong>Comedor Lima</strong></div>
+</div>
+<!-- Main Container Ends -->
+</body>
 </html>
